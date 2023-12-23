@@ -1,0 +1,219 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+}
+
+.navbar {
+  background-color: #fffdfd; /* Set background color */
+  color: #8c8b8b; /* Set text color */
+  padding: 10px 20px; /* Add padding */
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Align items with space between them */
+  align-items: center; /* Center vertically */
+  margin: 20px;
+}
+
+.logo img {
+  max-height: 40px; /* Set the maximum height of the logo */
+}
+
+.menu a {
+  color: #7a7878; /* Set text color for menu items */
+  text-decoration: none; /* Remove underlines from links */
+  margin-right: 20px; /* Add right margin to create spacing between menu items */
+}
+
+.menu button {
+  background-color: white; /* Set background color for the button */
+  color: #f7f722; /* Set text color for the button */
+  padding: 8px 15px; /* Add padding to the button */
+  border: 1px solid yellow; /* Remove border from the button */
+  cursor: pointer; /* Add pointer cursor on hover */
+  font-weight: 600;
+}
+.heading {
+  margin: -100px 50px;
+  padding: 150px;
+  color: #333;
+}
+.heading-2 {
+  color: #828282;
+  margin: -150px -150px;
+  padding: 150px;
+  color: #333;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn {
+  width: 100px;
+  height: 40px;
+  font-weight: 600;
+  margin: 25px 0px;
+  color: white;
+  border: #fcc822;
+  border-radius: 5px;
+  background: linear-gradient(95deg, #fcc822 0%, #ffcd2e 100%);
+  box-shadow: 0px 10.45px 23.223px -6.967px #fbe18f;
+}
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(173, 167, 167, 0.225);
+  padding: 10px;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+}
+.popup > .pop-body {
+  border-radius: 10px;
+  padding: 40px 20px;
+  background-color: rgb(252, 253, 254);
+  display: flex;
+  flex-direction: column;
+  width: 716.422px;
+  height: 340.946px;
+  position: relative;
+  align-items: center;
+}
+.popup .close {
+  font-size: 25px;
+  font-weight: bold;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+}
+.options {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  justify-content: center;
+}
+.options div {
+  width: 90px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  background-color: #d1d1d1;
+  cursor: pointer;
+}
+.option.selected {
+  background-color: yellow;
+  position: relative;
+}
+.option.selected::after {
+  content: "\00D7";
+  position: absolute;
+  width: 20px;
+  top: 0px;
+  right: 0px;
+  color: white;
+  background-color: black;
+  font-size: 30px;
+  cursor: pointer;
+  height: 38px;
+}
+.popup .button-start {
+  padding: 10px 20px;
+  margin-top: -35px;
+  cursor: pointer;
+  background-color: #fcc822;
+  color: #fffdfd;
+  border: none;
+  margin-left: 500px;
+}
+.popup .button-select {
+  padding: 10px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+  background-color: #fcc822;
+  color: #fffdfd;
+  border: none;
+  margin-left: 170px;
+}
+.quiz-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fcc822;
+  color: #fffdfd;
+}
+
+.options-container {
+  color: black;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 10px;
+    align-items: center;
+    margin-top: 183px;
+
+}
+.option1{
+  background: #d1d1d1;
+  width: 150.065px;
+  height: 84.183px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+}
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
+}
+.buttons #prevButton {
+  background: linear-gradient(95deg, #d1d1d1 0%, #d1d1d1 100%);
+  box-shadow: 0px 5.806px 23.223px -6.967px #d1d1d1;
+  display: inline-flex;
+  padding: 8.128px 15.095px;
+  justify-content: center;
+  align-items: center;
+  gap: 5.806px;
+  border: none;
+}
+.buttons #nextButton{
+  display: flex;
+width: 89.988px;
+padding: 8.128px 15.095px;
+justify-content: center;
+align-items: center;
+gap: 5.806px;
+background: linear-gradient(95deg, #FCC822 0%, #FFCD2E 100%);
+box-shadow: 0px 5.806px 23.223px -6.967px #FBE18F;
+border: none;
+}
+
+.buttons #skipButton{
+  color: #FCC822;
+font-family: Poppins;
+font-size: 13.934px;
+font-style: normal;
+font-weight: 700;
+border: none;
+background-color: transparent;
+line-height: normal;
+}
+
+/* Add any styling you want for the selected option */
+.option.selected-option {
+  background-color: #ffcc00; /* Change the background color to yellow or your desired color */
+}
+.option :hover{
+  background-color: #ffcc00; /* Change the background color to yellow or your desired color */
+
+}

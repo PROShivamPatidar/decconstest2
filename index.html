@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Quiz Application</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="./asset/QuizGrad.svg" alt="logo" />
+      </div>
+      <div class="menu">
+        <a href="#">How it works?</a>
+        <a href="#">Features</a>
+        <a href="#">About us</a>
+        <button>Login</button>
+      </div>
+    </nav>
+
+    <div class="center">
+      <div class="hide">
+        <div class="heading">
+          <h1>
+            Learn <br />new concepts <br />
+            for each question
+          </h1>
+          <p class="heading-2">We help you prepare for exams and quizes</p>
+          <button class="btn" onclick="togglePopup()">Start Solving</button>
+        </div>
+
+        <img src="./asset/Group 118.svg" alt="groupimage" />
+      </div>
+    </div>
+
+    <div class="popup" style="display: none">
+      <div class="pop-body" id="form">
+        <span class="close" onclick="togglePopup()">&times;</span>
+        <h1>Choose your favorite topic</h1>
+        <p>Select more than 5 topics to start quiz</p>
+
+        <div class="options">
+          <div class="option">TagBadge</div>
+          <div class="option">TagBadge</div>
+          <div class="option">TagBadge</div>
+          <div class="option">TagBadge</div>
+          <div class="option">TagBadge</div>
+          <div class="option">TagBadge</div>
+          <div class="option">TagBadge</div>
+          <div class="option">TagBadge</div>
+          <div class="option">TagBadge</div>
+          <div class="option">TagBadge</div>
+          <div class="option">TagBadge</div>
+          <div class="option">TagBadge</div>
+          <div class="option">TagBadge</div>
+          <div class="option">TagBadge</div>
+          <div class="option">TagBadge</div>
+        </div>
+        <button class="button-select" onclick="highlightSelectedCategories()">
+          Select option
+        </button>
+        <button
+          class="button-start"
+          style="display: none"
+          onclick="startQuiz()"
+        >
+          Start Quiz
+        </button>
+      </div>
+    </div>
+
+    <div class="quiz-container" id="quizContainer" style="display: none">
+        <!-- Placeholder for displaying quiz questions -->
+      </div>
+      <div class="result-container" id="resultContainer" style="display: none">
+        <h2>Your Result</h2>
+        <p>Total Marks: <span id="totalMarks"></span></p>
+    </div>
+
+    <div class="buttons">
+        <button id="prevButton" onclick="prevQuestion()" style="display: none">Previous</button>
+        <button id="nextButton" onclick="nextQuestion()" style="display: none">Next</button>
+        <button id="skipButton" onclick="skipQuestion()" style="display: none">Skip</button>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
